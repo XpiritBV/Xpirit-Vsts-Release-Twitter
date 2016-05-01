@@ -26,5 +26,5 @@ Then add the task and configure the keys:
 
 # Wiki
 
-Please check the [Wiki](https://github.com/XpiritBV/Xpirit.Vsts.Release.Twitter/wiki).
+Please check the [Wiki](https://github.com/XpiritBV/Xpirit-Vsts-Release-Twitter/wiki).
 
