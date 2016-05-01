@@ -1,0 +1,72 @@
+{
+  "manifestVersion": 1,
+  "id": "PeterGroenewegen-Xpirit-Vsts-Release-Twitter-Test",
+  "name": "Twitter on build and release",
+  "version": "1.0.0",
+  "publisher": "petergroenewegen",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Twitter on build or release",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "Twitter",
+    "build",
+    "release",
+    "social"
+  ],
+  "screenshots": [
+    {
+      "path": "Xpirit.Vsts.Release.Twitter.Extension/images/screenshots/vsts-add-twitter.png"
+    },
+    {
+      "path": "Xpirit.Vsts.Release.Twitter.Extension/images/screenshots/vsts-config-twitter.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "Xpirit.Vsts.Release.Twitter.Extension/readme.md"
+    },
+    "license": {
+      "path": "Xpirit.Vsts.Release.Twitter.Extension/license.txt"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/XpiritBV/Xpirit.Vsts.Release.Twitter/wiki"
+    },
+    "support": {
+      "uri": "https://github.com/XpiritBV/Xpirit.Vsts.Release.Twitter/wiki"
+    }
+  },
+  "branding": {
+    "color": "rgb(36, 43, 50)",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "Xpirit.Vsts.Release.Twitter.Extension/images/Twitter128.png"
+  },
+  "files": [
+    {
+      "path": "Xpirit-Vsts-Release-Twitter"
+    }
+  ],
+
+  "contributions": [
+    {
+      "id": "Xpirit-Vsts-Release-Twitter",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Xpirit-Vsts-Release-Twitter"
+      }
+    }
+  ]
+}
