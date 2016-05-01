@@ -1,10 +1,10 @@
 {
   "manifestVersion": 1,
-  "id": "PeterGroenewegen-Xpirit-Vsts-Release-Twitter-Test",
+  "id": "PeterGroenewegen-Xpirit-Vsts-Release-Twitter",
   "name": "Twitter on build and release",
   "version": "1.0.0",
   "publisher": "petergroenewegen",
-  "public": false,
+  "public": true,
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
