@@ -26,11 +26,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
- 
   <ItemGroup>
     <Content Include="icon.png" />
   </ItemGroup>
-  
+  <ItemGroup>
+    <Compile Include="MyTwitter.zip" />
+    <Compile Include="task.json" />
+    <Compile Include="Twitter.ps1" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
 </Project>
