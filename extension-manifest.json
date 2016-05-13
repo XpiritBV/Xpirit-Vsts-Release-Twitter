@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "PeterGroenewegen-Xpirit-Vsts-Release-Twitter",
   "name": "Twitter on build and release",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "petergroenewegen",
   "public": true,
   "targets": [
@@ -38,10 +38,10 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/XpiritBV/Xpirit.Vsts.Release.Twitter/wiki"
+      "uri": "https://github.com/XpiritBV/Xpirit-Vsts-Release-Twitter/wiki"
     },
     "support": {
-      "uri": "https://github.com/XpiritBV/Xpirit.Vsts.Release.Twitter/wiki"
+      "uri": "https://github.com/XpiritBV/Xpirit-Vsts-Release-Twitter/wiki"
     }
   },
   "branding": {
@@ -66,6 +66,71 @@
       ],
       "properties": {
         "name": "Xpirit-Vsts-Release-Twitter"
+      }
+    },
+    {
+      "id": "twitter-service-endpoint",
+      "description": "Twitter",
+      "type": "ms.vss-endpoint.service-endpoint-type",
+      "targets": [
+        "ms.vss-endpoint.endpoint-types"
+      ],
+      "properties": {
+        "name": "twitter-scheme",
+        "displayName": "Twitter",
+        "url": "https://app.twitter.com/1.1/",
+        "authenticationSchemes": [
+          {
+            "type": "ms.vss-endpoint.endpoint-auth-scheme-basic",
+            "inputDescriptors": [
+              {
+                "id": "username",
+                "name": "API",
+                "description": "Twitter API",
+                "inputMode": "textbox",
+                "isConfidential": false,
+                "validation": {
+                  "isRequired": true,
+                  "dataType": "string"
+                }
+              },
+              {
+                "id": "password",
+                "name": "APISecret",
+                "description": "Twitter APISecret",
+                "inputMode": "passwordbox",
+                "isConfidential": true,
+                "validation": {
+                  "isRequired": true,
+                  "dataType": "string"
+                }
+              },
+              {
+                "id": "accesstoken",
+                "name": "AccessToken",
+                "description": "Twitter AccessToken",
+                "inputMode": "textbox",
+                "isConfidential": false,
+                "validation": {
+                  "isRequired": true,
+                  "dataType": "string"
+                }
+              },
+              {
+                "id": "accesstokensecret",
+                "name": "AccessTokenSecret",
+                "description": "twitter AccessTokenSecret",
+                "inputMode": "passwordbox",
+                "isConfidential": true,
+                "validation": {
+                  "isRequired": true,
+                  "dataType": "string"
+                }
+              }
+            ]
+          }
+        ]
+
       }
     }
   ]

@@ -1,9 +1,6 @@
 Param(
     [string] $Message,
-    [string] $APIKey,
-    [string] $APISecret,
-    [string] $AccessToken,
-    [string] $AccessTokenSecret
+    [string] $TwitterEndPoint
 )
 
 function Get-ModuleVersion($modulename){
@@ -36,6 +33,17 @@ if ($mytwitterversion) {
     $mytwitterversion = Get-ModuleVersion ("mytwitter")
 	Write-Output "MyTwitter installed $mytwitterversion"
 }
+
+$TwitterConfig = Get-ServiceEndpoint -Context $distributedTaskContext -Name $TwitterEndPoint
+if(-not $TwitterConfig){
+	Write-Output "Twitter Service Endpoint is null"
+	return
+}
+
+$APIKey = $TwitterConfig.Authorization.Parameters.username
+$APISecret = $TwitterConfig.Authorization.Parameters.password
+$AccessToken = $TwitterConfig.Authorization.Parameters.AccessToken
+$AccessTokenSecret = $TwitterConfig.Authorization.Parameters.AccessTokenSecret
 
 #Write-Output "Configure tweeting"
 New-MyTwitterConfiguration -APIKey $APIKey -APISecret $APISecret -AccessToken $AccessToken -AccessTokenSecret $AccessTokenSecret
