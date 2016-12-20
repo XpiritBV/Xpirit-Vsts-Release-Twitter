@@ -1,4 +1,4 @@
-# Xpirit.Vsts.Release.Twitter
+# Twitter on build and release
 
 A set of Release/Build tasks for TFS 2015 and Visual Studio Team Services that enables you to send tweets.
 
