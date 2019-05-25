@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "PeterGroenewegen-Xpirit-Vsts-Release-Twitter",
   "name": "Twitter on build and release",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "publisher": "petergroenewegen",
   "public": true,
   "targets": [
