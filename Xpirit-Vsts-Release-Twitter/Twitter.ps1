@@ -24,7 +24,7 @@ if ($mytwitterversion) {
 	}
 
 	Add-Type -Assembly System.IO.Compression.FileSystem
-	[System.IO.Compression.ZipFile]::ExtractToDirectory($Module, $env:temp)
+	[System.IO.Compression.ZipFile]::ExtractToDirectory($Module, $unzipdir)
 
     $modulePath = Join-Path $env:temp "MyTwitter-master\MyTwitter.psm1"  
 
