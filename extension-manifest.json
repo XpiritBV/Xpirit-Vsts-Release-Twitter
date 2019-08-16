@@ -12,7 +12,7 @@
   ],
   "description": "Twitter on build or release",
   "categories": [
-    "Build and release"
+    "Azure Pipelines"
   ],
   "tags": [
     "Twitter",
