@@ -34,7 +34,7 @@
   ],
   "instanceNameFormat": "Twitter task",
   "execution": {
-    "PowerShell": {
+    "PowerShell3": {
       "target": "$(currentDirectory)\\Twitter.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(currentDirectory)"
